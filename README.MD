@@ -20,7 +20,9 @@ SESAK is a copyright crowd simulation software (copyright no: MYIPO LY2017001317
 * Customized Agent Position, Walk Speed and Body Radius
 
 ## Fundamental Analysis
-
+* Evacuation Time
+* Number of Evacuated People
+* Crowd Speed, Flow and Density (Fundamental Graph)
 
 ## Installation
 
@@ -30,6 +32,32 @@ There are 2 type of objective function used in the optimization algorithm which 
 * single-objective problem
 * multi-objective problem 
 
-Details on the crowd simulation model (crowd dynamics) and optimization algorithm used in this software is available from here. 
+Detail publications on the crowd simulation model (crowd dynamics) and optimization algorithm used in this software is available from here. 
 
+[1] Khamis, N., Selamat, H., Ismail, F. S., Lutfy, O. F., Haniff, M. F., & Nordin, I. N. A. M. (2020). Optimized exit door locations for a safer emergency evacuation using crowd evacuation model and artificial bee colony optimization. Chaos, Solitons & Fractals, 131, 109505.
+
+```bibtex
+@article{khamis2020optimized,
+  title={Optimized exit door locations for a safer emergency evacuation using crowd evacuation model and artificial bee colony optimization},
+  author={Khamis, Nurulaqilla and Selamat, Hazlina and Ismail, Fatimah Sham and Lutfy, Omar Farouq and Haniff, Mohamad Fadzli and Nordin, Ili Najaa Aimi Mohd},
+  journal={Chaos, Solitons \& Fractals},
+  volume={131},
+  pages={109505},
+  year={2020},
+  publisher={Elsevier}
+}
+```
+
+[2] Khamis, N., Selamat, H., Ismail, F. S., & Lutfy, O. F. (2019). Optimal exit configuration of factory layout for a safer emergency evacuation using crowd simulation model and Multi-Objective Artificial Bee Colony optimization. International Journal of Integrated Engineering, 11(4).
+
+```bibtex
+@article{khamis2019optimal,
+  title={Optimal exit configuration of factory layout for a safer emergency evacuation using crowd simulation model and Multi-Objective Artificial Bee Colony optimization},
+  author={Khamis, Nurulaqilla and Selamat, Hazlina and Ismail, Fatimah Sham and Lutfy, Omar Farouq},
+  journal={International Journal of Integrated Engineering},
+  volume={11},
+  number={4},
+  year={2019}
+}
+```
 
