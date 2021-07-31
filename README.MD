@@ -29,8 +29,8 @@ SESAK is a copyright crowd simulation software (copyright no: MYIPO LY2017001317
 
 ## References
 There are 2 type of objective function used in the optimization algorithm which are;
-* single-objective problem
-* multi-objective problem 
+* single-objective problem (evacuation time)
+* multi-objective problem (evacuation time and discomfort)
 
 Detail publications on the crowd simulation model (crowd dynamics) and optimization algorithm used in this software is available from here. 
 
