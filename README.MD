@@ -9,6 +9,18 @@ SESAK is a copyright crowd simulation software (copyright no: MYIPO LY2017001317
 
 ## Model Development 
 * Crowd Dynamics using Social Force Model 
+* Path Finding using A* Algorithm
 * Optimization Engine using Artificial Bee Colony Optimization
 
+## Environment Drawing
+* Support Modular Type Building Design (using vertical and horizontal line)
+* Customized Door Sizes
+* Customized Comfort Test Zone
+* Customized Evacuation Area
+* Customized Agent Position, Walk Speed and Body Radius
+
 ## Installation
+
+
+## References
+
