@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{26C75961-2448-42D4-8B9F-DB2A5A14C640}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Sesak</RootNamespace>
+    <AssemblyName>Sesak</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>group.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=3.0.6.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <HintPath>..\packages\DockPanelSuite.3.0.6\lib\net40\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppHelper.cs" />
+    <Compile Include="Commons\CanvasHelper.cs" />
+    <Compile Include="Commons\DrawHelper.cs" />
+    <Compile Include="Commons\FormInputDialogBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Commons\FormInputDialogBox.Designer.cs">
+      <DependentUpon>FormInputDialogBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commons\Line.cs" />
+    <Compile Include="Commons\MathHelper.cs" />
+    <Compile Include="Commons\PlotTemplate.cs" />
+    <Compile Include="Commons\PointOfInterest.cs" />
+    <Compile Include="Commons\SimulationEnvironment.cs" />
+    <Compile Include="Commons\Vec2.cs" />
+    <Compile Include="FormEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditor.Designer.cs">
+      <DependentUpon>FormEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditorWorkspace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditorWorkspace.Designer.cs">
+      <DependentUpon>FormEditorWorkspace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOptimizer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOptimizer.Designer.cs">
+      <DependentUpon>FormOptimizer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOptimizerWorkspace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOptimizerWorkspace.Designer.cs">
+      <DependentUpon>FormOptimizerWorkspace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSimulation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSimulation.Designer.cs">
+      <DependentUpon>FormSimulation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWorkspace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWorkspace.Designer.cs">
+      <DependentUpon>FormWorkspace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptimizerWorkspace.cs" />
+    <Compile Include="Optimizer\ABCOptimizer.cs" />
+    <Compile Include="Optimizer\FormViewPointEnvironmentDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Optimizer\FormViewPointEnvironmentDialog.Designer.cs">
+      <DependentUpon>FormViewPointEnvironmentDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Optimizer\FormExportEnvironmentDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Optimizer\FormExportEnvironmentDialog.Designer.cs">
+      <DependentUpon>FormExportEnvironmentDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Optimizer\FormLogGraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Optimizer\FormLogGraph.Designer.cs">
+      <DependentUpon>FormLogGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Optimizer\FormOptimizerLogs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Optimizer\FormOptimizerLogs.Designer.cs">
+      <DependentUpon>FormOptimizerLogs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Optimizer\FormParetoPlot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Optimizer\FormParetoPlot.Designer.cs">
+      <DependentUpon>FormParetoPlot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Optimizer\ItterationResult.cs" />
+    <Compile Include="Optimizer\Pareto.cs" />
+    <Compile Include="Path\AStarPathFinder.cs" />
+    <Compile Include="Path\GridCell.cs" />
+    <Compile Include="Path\IPathFinder.cs" />
+    <Compile Include="Path\PathNode.cs" />
+    <Compile Include="Path\WaypointNode.cs" />
+    <Compile Include="Path\ZoneMap.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimulationObjects\Agent.cs" />
+    <Compile Include="SimulationObjects\EvacuationArea.cs" />
+    <Compile Include="SimulationObjects\IDrawableObject.cs" />
+    <Compile Include="SimulationObjects\IObstacle.cs" />
+    <Compile Include="SimulationObjects\PropertiesControl\PropControl.cs" />
+    <Compile Include="SimulationObjects\PropertiesControl\ucDoorProp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SimulationObjects\PropertiesControl\ucDoorProp.Designer.cs">
+      <DependentUpon>ucDoorProp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SimulationObjects\PropertiesControl\ucAgentProp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SimulationObjects\PropertiesControl\ucAgentProp.Designer.cs">
+      <DependentUpon>ucAgentProp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SimulationObjects\PropertiesControl\ucEvacuationAreaProp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SimulationObjects\PropertiesControl\ucEvacuationAreaProp.Designer.cs">
+      <DependentUpon>ucEvacuationAreaProp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SimulationObjects\PropertiesControl\ucWallProp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SimulationObjects\PropertiesControl\ucWallProp.Designer.cs">
+      <DependentUpon>ucWallProp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SimulationObjects\SimEnvironmentData.cs" />
+    <Compile Include="SimulationObjects\SimulationObject.cs" />
+    <Compile Include="SimulationObjects\Door.cs" />
+    <Compile Include="SimulationObjects\Wall.cs" />
+    <Compile Include="SimulationWorkspace.cs" />
+    <Compile Include="Simulation\FormFrameExporter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simulation\FormFrameExporter.Designer.cs">
+      <DependentUpon>FormFrameExporter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Simulation\FormFundamentalDiagram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simulation\FormFundamentalDiagram.Designer.cs">
+      <DependentUpon>FormFundamentalDiagram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Simulation\FormPlot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simulation\FormPlot.Designer.cs">
+      <DependentUpon>FormPlot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Simulation\FormSimulationParameter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simulation\FormSimulationParameter.Designer.cs">
+      <DependentUpon>FormSimulationParameter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Simulation\FrameData.cs" />
+    <Compile Include="Simulation\FramePlotter.cs" />
+    <Compile Include="Simulation\FundamentalDiagram.cs" />
+    <Compile Include="Simulation\HeatMap.cs" />
+    <Compile Include="Simulation\OldAgent.cs" />
+    <Compile Include="Simulation\OldObstacle.cs" />
+    <Compile Include="Simulation\OptimizedSimulation.cs" />
+    <Compile Include="Simulation\PlottingHelper.cs" />
+    <Compile Include="Simulation\SimHelper.cs" />
+    <Compile Include="Simulation\SimulationInstance.cs" />
+    <Compile Include="Simulation\SimulationParameters.cs" />
+    <Compile Include="Simulation\TickData.cs" />
+    <Compile Include="Simulation\Vector2D.cs" />
+    <Compile Include="Simulation\WaypointHelper.cs" />
+    <Compile Include="Simulation\ZoneData.cs" />
+    <Compile Include="Simulation\ZoneHelper.cs" />
+    <EmbeddedResource Include="Commons\FormInputDialogBox.resx">
+      <DependentUpon>FormInputDialogBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditor.resx">
+      <DependentUpon>FormEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditorWorkspace.resx">
+      <DependentUpon>FormEditorWorkspace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOptimizer.resx">
+      <DependentUpon>FormOptimizer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOptimizerWorkspace.resx">
+      <DependentUpon>FormOptimizerWorkspace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSimulation.resx">
+      <DependentUpon>FormSimulation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWorkspace.resx">
+      <DependentUpon>FormWorkspace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Optimizer\FormViewPointEnvironmentDialog.resx">
+      <DependentUpon>FormViewPointEnvironmentDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Optimizer\FormExportEnvironmentDialog.resx">
+      <DependentUpon>FormExportEnvironmentDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Optimizer\FormOptimizerLogs.resx">
+      <DependentUpon>FormOptimizerLogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Optimizer\FormParetoPlot.resx">
+      <DependentUpon>FormParetoPlot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SimulationObjects\PropertiesControl\ucDoorProp.resx">
+      <DependentUpon>ucDoorProp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimulationObjects\PropertiesControl\ucAgentProp.resx">
+      <DependentUpon>ucAgentProp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimulationObjects\PropertiesControl\ucEvacuationAreaProp.resx">
+      <DependentUpon>ucEvacuationAreaProp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimulationObjects\PropertiesControl\ucWallProp.resx">
+      <DependentUpon>ucWallProp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Simulation\FormFrameExporter.resx">
+      <DependentUpon>FormFrameExporter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Simulation\FormFundamentalDiagram.resx">
+      <DependentUpon>FormFundamentalDiagram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Simulation\FormPlot.resx">
+      <DependentUpon>FormPlot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Simulation\FormSimulationParameter.resx">
+      <DependentUpon>FormSimulationParameter.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="group.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
