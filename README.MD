@@ -3,6 +3,7 @@
 --------------------------------------------------------------------------------------
 
 # SESAK: A Crowd Simulation Tool
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 ## Software Description
 SESAK is a copyright crowd simulation software (copyright no: MYIPO LY2017001317) that has been developed by our team to simulate the movement of crowd in a space/area to provide insights on how crowd would behave in different environments. It can be used to evaluate performance and safety of environment in every phase of the life cycle; from design to operation. In this tool, SESAK software will be integrated with building design drawing to anticipate congestions occurences and propose alternative solutions or remedial actions to designers using swarm intelligence optimization. 
