@@ -1,5 +1,7 @@
 ![Logo](https://github.com/aqillakhamis/SESAK-Crowd-Simulation-Tool/blob/main/logo/sesak_logo.PNG)
 
+--------------------------------------------------------------------------------------
+
 # SESAK: A Crowd Simulation Tool
 
 ## Software Description
