@@ -1,4 +1,4 @@
-![Logo](https://github.com/aqillakhamis/SESAK-Crowd-Simulation-Tool/tree/main/logo/sesak_logo.png)
+![Logo](https://github.com/aqillakhamis/SESAK-Crowd-Simulation-Tool/blob/main/logo/sesak_logo.PNG)
 
 # SESAK: A Crowd Simulation Tool
 
