@@ -27,6 +27,20 @@ SESAK is a copyright crowd simulation software (copyright no: MYIPO LY2017001317
 
 ## Installation
 
+### Environment Support 
+Windows 10 
+
+### Quick Setup
+1. Clone this repo by run this command:  
+```
+git clone https://github.com/aqillakhamis/SESAK-Crowd-Simulation-Tool.git
+```
+
+2. Run executable application located inside __*bin/v1.0*__ folder
+
+3. Run application __*Sesak.exe*__
+
+4. Guideline on how to use this software can be referred from __*user manual*__ folder
 
 ## References
 There are 2 type of objective function used in the optimization algorithm which are;
@@ -61,4 +75,7 @@ Detail publications on the crowd simulation model (crowd dynamics) and optimizat
   year={2019}
 }
 ```
+
+## Contact 
+If you have any technical issues in using this software, please do not hesitate to contact us via this email aqillakhamis@gmail.com, hazlina@utm.my 
 
